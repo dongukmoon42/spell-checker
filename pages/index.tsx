@@ -51,9 +51,12 @@ export default function Home() {
   return (
     <div style={{ maxWidth: '700px', margin: '30px auto', padding: '20px', fontFamily: 'sans-serif' }}>
       <h1>🧐 맞춤법 검사기 (Next.js)</h1>
-      
-      <nav>
-        <a href="/">맞춤법 검사기</a> | <a href="/word-count">단어 수</a> | <a href="/char-count">글자 수</a> | <a href="/resume-analyzer">자소서 분석</a>
+
+      <nav style={{ marginBottom: '20px', fontSize: '16px' }}>
+        <a href="/" style={{ marginRight: '15px', color: '#0070f3' }}>맞춤법 검사기</a>
+        <a href="/word-count" style={{ marginRight: '15px', color: '#0070f3' }}>단어 수</a>
+        <a href="/char-count" style={{ marginRight: '15px', color: '#0070f3' }}>글자 수</a>
+        <a href="/resume-analyzer" style={{ color: '#0070f3' }}>자소서 분석</a>
       </nav>
 
       <textarea
