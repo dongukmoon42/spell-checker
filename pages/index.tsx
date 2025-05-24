@@ -1,19 +1,19 @@
 // pages/index.tsx
-import { useState, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Home() {
   const [input, setInput] = useState('');
   const [highlighted, setHighlighted] = useState('');
   const [corrected, setCorrected] = useState('');
+  const [patterns, setPatterns] = useState<Record<string, string>>({});
   const correctedRef = useRef<HTMLDivElement>(null);
 
-  const patterns: Record<string, string> = {
-    "되요": "돼요",
-    "안되": "안 돼",
-    "왠지": "왜인지",
-    "잇습니다": "있습니다",
-    "하겠읍니다": "하겠습니다"
-  };
+  useEffect(() => {
+    fetch('/korean_spelling_patterns.json')
+      .then(res => res.json())
+      .then(data => setPatterns(data))
+      .catch(err => console.error('패턴 로딩 실패:', err));
+  }, []);
 
   const checkSpelling = () => {
     let result = input;
@@ -22,7 +22,7 @@ export default function Home() {
 
     for (const wrong in patterns) {
       const correct = patterns[wrong];
-      const regex = new RegExp(wrong, 'g');
+      const regex = new RegExp(`\\b${wrong}\\b`, 'g');
       if (regex.test(result)) {
         found = true;
         result = result.replace(regex, `<mark>${wrong}</mark>`);
@@ -50,7 +50,7 @@ export default function Home() {
 
   return (
     <div style={{ maxWidth: '900px', margin: '30px auto', padding: '20px', fontFamily: 'sans-serif', backgroundColor: '#f9f9f9', borderRadius: '10px' }}>
-      <h1 style={{ fontSize: '28px', marginBottom: '10px' }}>🧐 맞춤법 검사기</h1>
+      <h1 style={{ fontSize: '28px', marginBottom: '10px' }}>🧐 맞춤법 검사기 (Next.js)</h1>
 
       <nav style={{ marginBottom: '20px', backgroundColor: '#e6ffe6', padding: '12px 20px', borderRadius: '8px', display: 'flex', justifyContent: 'center', gap: '20px', fontSize: '16px', fontWeight: 500 }}>
         <a href="/" style={{ color: '#0070f3', textDecoration: 'none' }}>맞춤법 검사기</a>
@@ -66,19 +66,14 @@ export default function Home() {
       <textarea
         rows={10}
         style={{ width: '100%', padding: '10px', fontSize: '16px', borderRadius: '6px' }}
+        placeholder="여기에 텍스트를 입력하세요..."
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        placeholder="여기에 텍스트를 입력하세요..."
       />
 
-      <button
-        onClick={checkSpelling}
-        style={{ marginTop: '10px', padding: '10px 20px', fontSize: '16px' }}>
-        검사하기
-      </button>
+      <button onClick={checkSpelling} style={{ marginTop: '10px', padding: '10px 20px', fontSize: '16px' }}>검사하기</button>
 
-      <div
-        style={{ marginTop: '20px', padding: '15px', background: '#f9f9f9', borderRadius: '8px' }}
+      <div style={{ marginTop: '20px', padding: '15px', background: '#f9f9f9', borderRadius: '8px' }}
         dangerouslySetInnerHTML={{ __html: highlighted }}
       />
 
