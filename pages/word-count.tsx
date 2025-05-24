@@ -1,23 +1,39 @@
 // pages/word-count.tsx
 import { useState } from 'react';
-import Head from 'next/head';
 
 export default function WordCount() {
   const [input, setInput] = useState('');
-  const wordCount = input.trim() === '' ? 0 : input.trim().split(/\s+/).length;
+
+  const countWords = (text: string) => {
+    return text.trim().split(/\s+/).filter(Boolean).length;
+  };
+
+  const totalWords = countWords(input);
 
   return (
-    <div style={{ maxWidth: 700, margin: '30px auto', padding: 20 }}>
-      <Head>
-        <title>단어 수 세기 | 글쓰기 도구</title>
-        <meta name="description" content="입력한 텍스트의 단어 수를 실시간으로 계산합니다. 자소서, 블로그, 과제 글자 수 확인용 도구." />
-      </Head>
-      <nav>
-        <a href="/">맞춤법 검사기</a> | <a href="/word-count">단어 수</a> | <a href="/char-count">글자 수</a> | <a href="/resume-analyzer">자소서 분석</a>
+    <div style={{ maxWidth: '900px', margin: '30px auto', padding: '20px', fontFamily: 'sans-serif', backgroundColor: '#f9f9f9', borderRadius: '10px' }}>
+      <h1 style={{ fontSize: '28px', marginBottom: '10px' }}>🔢 단어 수 세기</h1>
+
+      <nav style={{ marginBottom: '20px', backgroundColor: '#e6ffe6', padding: '12px 20px', borderRadius: '8px', display: 'flex', justifyContent: 'center', gap: '20px', fontSize: '16px', fontWeight: 500 }}>
+        <a href="/" style={{ color: '#0070f3', textDecoration: 'none' }}>맞춤법 검사기</a>
+        <a href="/word-count" style={{ color: '#0070f3', textDecoration: 'none' }}>단어 수 세기</a>
+        <a href="/char-count" style={{ color: '#0070f3', textDecoration: 'none' }}>글자 수 세기</a>
+        <a href="/resume-analyzer" style={{ color: '#0070f3', textDecoration: 'none' }}>자소서 분석기</a>
       </nav>
-      <h1>🔢 단어 수 세기</h1>
-      <textarea rows={10} style={{ width: '100%' }} value={input} onChange={(e) => setInput(e.target.value)} />
-      <p>총 단어 수: <strong>{wordCount}</strong></p>
+
+      <div style={{ backgroundColor: '#cce5ff', padding: '12px', textAlign: 'center', marginBottom: '15px', borderRadius: '6px', border: '1px dashed #0070f3' }}>
+        <img src="/ad-placeholder.png" alt="광고 영역" style={{ maxWidth: '100%', height: 'auto' }} />
+      </div>
+
+      <textarea
+        rows={10}
+        style={{ width: '100%', padding: '10px', fontSize: '16px', borderRadius: '6px' }}
+        placeholder="여기에 텍스트를 입력하세요..."
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+      />
+
+      <p style={{ marginTop: '10px', fontWeight: 'bold' }}>총 단어 수: <span style={{ color: '#0070f3' }}>{totalWords}</span></p>
     </div>
   );
 }
