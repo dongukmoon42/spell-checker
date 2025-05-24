@@ -20,7 +20,7 @@ export default function Home() {
     let fixed = input;
     let found = false;
 
-    for (let wrong in patterns) {
+    for (const wrong in patterns) {
       const correct = patterns[wrong];
       const regex = new RegExp(wrong, 'g');
       if (regex.test(result)) {
@@ -80,3 +80,6 @@ export default function Home() {
     </div>
   );
 }
+// for vercel redeploy
+// redeploy test
+
