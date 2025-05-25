@@ -1,10 +1,6 @@
-// next-sitemap.config.js
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://your-domain.com', // ← 여기 실제 배포 주소로 변경 (예: vercel 도메인)
+  siteUrl: 'https://spell-checker-pi.vercel.app', // ✅ Vercel 배포 주소
   generateRobotsTxt: true,
-  robotsTxtOptions: {
-    policies: [
-      { userAgent: '*', allow: '/' },
-    ],
-  },
+  sitemapSize: 7000,
 };
