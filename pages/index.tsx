@@ -1,63 +1,46 @@
 // pages/index.tsx
-import { useState, useRef } from 'react';
-import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
-export default function Home() {
+type Rule = {
+  wrong: string;
+  correct: string;
+};
+
+export default function SpellChecker() {
   const [input, setInput] = useState('');
-  const [highlighted, setHighlighted] = useState('');
-  const [corrected, setCorrected] = useState('');
-  const correctedRef = useRef<HTMLDivElement>(null);
+  const [output, setOutput] = useState('');
+  const [rules, setRules] = useState<Rule[]>([]);
 
-  const patterns: Record<string, string> = {
-    "되요": "돼요",
-    "안되": "안 돼",
-    "왠지": "왜인지",
-    "잇습니다": "있습니다",
-    "하겠읍니다": "하겠습니다"
+  useEffect(() => {
+    fetch('/data/spellcheck_500.json')
+      .then(res => res.json())
+      .then(setRules)
+      .catch(err => console.error('불러오기 오류:', err));
+  }, []);
+
+  const checkSpelling = (text: string): string => {
+    let corrected = text;
+    rules.forEach(rule => {
+      const regex = new RegExp(rule.wrong, 'g');
+      corrected = corrected.replace(regex, rule.correct);
+    });
+    return corrected;
   };
 
-  const checkSpelling = () => {
-    let result = input;
-    let fixed = input;
-    let found = false;
-
-    for (const wrong in patterns) {
-      const correct = patterns[wrong];
-      const regex = new RegExp(`\\b${wrong}\\b`, 'g');
-      if (regex.test(result)) {
-        found = true;
-        result = result.replace(regex, `<mark style="background-color:#e0b0ff">${wrong}</mark>`);
-        fixed = fixed.replace(regex, correct);
-      }
-    }
-
-    setHighlighted(
-      found
-        ? result + '<br><br><strong>❗ 표시된 단어는 자주 틀리는 표현일 수 있어요.</strong>'
-        : '오타나 자주 틀리는 표현을 찾지 못했어요.'
-    );
-
-    setCorrected(found ? fixed : '수정할 표현이 없습니다.');
-  };
-
-  const copyCorrectedText = () => {
-    if (correctedRef.current) {
-      const text = correctedRef.current.innerText.replace('🔧 수정된 문장:\n', '').trim();
-      navigator.clipboard.writeText(text).then(() => {
-        alert('수정된 문장이 복사되었습니다!');
-      });
-    }
+  const handleCheck = () => {
+    const corrected = checkSpelling(input);
+    setOutput(corrected);
   };
 
   return (
     <div style={{ maxWidth: '900px', margin: '30px auto', padding: '20px', fontFamily: 'sans-serif', backgroundColor: '#f9f9f9', borderRadius: '10px' }}>
-      <h1 style={{ fontSize: '28px', marginBottom: '10px' }}>🧐 맞춤법 검사기 (Next.js)</h1>
+      <h1 style={{ fontSize: '28px', marginBottom: '10px' }}>🥴 맞춤법 검사기 (Next.js)</h1>
 
       <nav style={{ marginBottom: '20px', backgroundColor: '#e6ffe6', padding: '12px 20px', borderRadius: '8px', display: 'flex', justifyContent: 'center', gap: '20px', fontSize: '16px', fontWeight: 500 }}>
-        <Link href="/">맞춤법 검사기</Link>
-        <Link href="/word-count">단어 수 세기</Link>
-        <Link href="/char-count">글자 수 세기</Link>
-        <Link href="/resume-analyzer">자소서 분석기</Link>
+        <a href="/" style={{ color: '#0070f3', textDecoration: 'none' }}>맞춤법 검사기</a>
+        <a href="/word-count" style={{ color: '#0070f3', textDecoration: 'none' }}>단어 수 세기</a>
+        <a href="/char-count" style={{ color: '#0070f3', textDecoration: 'none' }}>글자 수 세기</a>
+        <a href="/resume-analyzer" style={{ color: '#0070f3', textDecoration: 'none' }}>자소서 분석기</a>
       </nav>
 
       <div style={{ backgroundColor: '#cce5ff', padding: '12px', textAlign: 'center', marginBottom: '15px', borderRadius: '6px', border: '1px dashed #0070f3' }}>
@@ -67,33 +50,19 @@ export default function Home() {
       <textarea
         rows={10}
         style={{ width: '100%', padding: '10px', fontSize: '16px', borderRadius: '6px' }}
+        placeholder="여기에 텍스트를 입력하세요..."
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        placeholder="여기에 텍스트를 입력하세요..."
       />
 
-      <button
-        onClick={checkSpelling}
-        style={{ marginTop: '10px', padding: '10px 20px', fontSize: '16px' }}>
+      <button onClick={handleCheck} style={{ marginTop: '10px', padding: '10px 20px', fontSize: '16px', backgroundColor: '#0070f3', color: 'white', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>
         검사하기
       </button>
 
-      <div
-        style={{ marginTop: '20px', padding: '15px', background: '#f9f9f9', borderRadius: '8px' }}
-        dangerouslySetInnerHTML={{ __html: highlighted }}
-      />
-
-      <div
-        ref={correctedRef}
-        style={{ marginTop: '10px', padding: '15px', background: '#e2f0ff', borderRadius: '8px', whiteSpace: 'pre-wrap' }}>
-        <strong>🔧 수정된 문장:</strong><br />{corrected}
+      <div style={{ marginTop: '20px', padding: '15px', background: '#eaf4ff', borderRadius: '8px' }}>
+        <strong>🔧 수정된 문장:</strong>
+        <pre>{output || '수정할 표현이 없습니다.'}</pre>
       </div>
-
-      <button
-        onClick={copyCorrectedText}
-        style={{ marginTop: '10px', padding: '8px 15px', fontSize: '14px', backgroundColor: '#0070f3', color: '#fff', border: 'none', borderRadius: '5px' }}>
-        📋 수정된 문장 복사하기
-      </button>
     </div>
   );
 }

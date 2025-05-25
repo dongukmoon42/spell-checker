@@ -1,0 +1,2002 @@
+[
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "어의없다",
+    "correct": "어이없다"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "넜어요",
+    "correct": "넣었어요"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "헷갈리다",
+    "correct": "헛갈리다"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "같은데요",
+    "correct": "같은데요."
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "이런걸",
+    "correct": "이런 것을"
+  },
+  {
+    "incorrect": "왠지",
+    "correct": "왜인지"
+  },
+  {
+    "incorrect": "됬습니다",
+    "correct": "됐습니다"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "맛있는걸요",
+    "correct": "맛있는 걸요"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "몰르겠어요",
+    "correct": "모르겠어요"
+  },
+  {
+    "incorrect": "안됬다",
+    "correct": "안됐다"
+  },
+  {
+    "incorrect": "않은데요",
+    "correct": "안은데요"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "않돼",
+    "correct": "안돼"
+  },
+  {
+    "incorrect": "잊어버렸다",
+    "correct": "잊었다"
+  },
+  {
+    "incorrect": "그럴께요",
+    "correct": "그럴게요"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "무었",
+    "correct": "무엇"
+  },
+  {
+    "incorrect": "됬다",
+    "correct": "됐다"
+  },
+  {
+    "incorrect": "되요",
+    "correct": "돼요"
+  },
+  {
+    "incorrect": "않아요",
+    "correct": "안 해요"
+  },
+  {
+    "incorrect": "어떻해",
+    "correct": "어떻게"
+  },
+  {
+    "incorrect": "않되",
+    "correct": "안되"
+  }
+]
