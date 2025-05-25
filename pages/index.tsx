@@ -1,19 +1,20 @@
 // pages/index.tsx
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const [input, setInput] = useState('');
   const [highlighted, setHighlighted] = useState('');
   const [corrected, setCorrected] = useState('');
-  const [patterns, setPatterns] = useState<Record<string, string>>({});
   const correctedRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    fetch('/korean_spelling_patterns.json')
-      .then(res => res.json())
-      .then(data => setPatterns(data))
-      .catch(err => console.error('패턴 로딩 실패:', err));
-  }, []);
+  const patterns: Record<string, string> = {
+    "되요": "돼요",
+    "안되": "안 돼",
+    "왠지": "왜인지",
+    "잇습니다": "있습니다",
+    "하겠읍니다": "하겠습니다"
+  };
 
   const checkSpelling = () => {
     let result = input;
@@ -25,7 +26,7 @@ export default function Home() {
       const regex = new RegExp(`\\b${wrong}\\b`, 'g');
       if (regex.test(result)) {
         found = true;
-        result = result.replace(regex, `<mark>${wrong}</mark>`);
+        result = result.replace(regex, `<mark style="background-color:#e0b0ff">${wrong}</mark>`);
         fixed = fixed.replace(regex, correct);
       }
     }
@@ -53,10 +54,10 @@ export default function Home() {
       <h1 style={{ fontSize: '28px', marginBottom: '10px' }}>🧐 맞춤법 검사기 (Next.js)</h1>
 
       <nav style={{ marginBottom: '20px', backgroundColor: '#e6ffe6', padding: '12px 20px', borderRadius: '8px', display: 'flex', justifyContent: 'center', gap: '20px', fontSize: '16px', fontWeight: 500 }}>
-        <a href="/" style={{ color: '#0070f3', textDecoration: 'none' }}>맞춤법 검사기</a>
-        <a href="/word-count" style={{ color: '#0070f3', textDecoration: 'none' }}>단어 수 세기</a>
-        <a href="/char-count" style={{ color: '#0070f3', textDecoration: 'none' }}>글자 수 세기</a>
-        <a href="/resume-analyzer" style={{ color: '#0070f3', textDecoration: 'none' }}>자소서 분석기</a>
+        <Link href="/">맞춤법 검사기</Link>
+        <Link href="/word-count">단어 수 세기</Link>
+        <Link href="/char-count">글자 수 세기</Link>
+        <Link href="/resume-analyzer">자소서 분석기</Link>
       </nav>
 
       <div style={{ backgroundColor: '#cce5ff', padding: '12px', textAlign: 'center', marginBottom: '15px', borderRadius: '6px', border: '1px dashed #0070f3' }}>
@@ -66,14 +67,19 @@ export default function Home() {
       <textarea
         rows={10}
         style={{ width: '100%', padding: '10px', fontSize: '16px', borderRadius: '6px' }}
-        placeholder="여기에 텍스트를 입력하세요..."
         value={input}
         onChange={(e) => setInput(e.target.value)}
+        placeholder="여기에 텍스트를 입력하세요..."
       />
 
-      <button onClick={checkSpelling} style={{ marginTop: '10px', padding: '10px 20px', fontSize: '16px' }}>검사하기</button>
+      <button
+        onClick={checkSpelling}
+        style={{ marginTop: '10px', padding: '10px 20px', fontSize: '16px' }}>
+        검사하기
+      </button>
 
-      <div style={{ marginTop: '20px', padding: '15px', background: '#f9f9f9', borderRadius: '8px' }}
+      <div
+        style={{ marginTop: '20px', padding: '15px', background: '#f9f9f9', borderRadius: '8px' }}
         dangerouslySetInnerHTML={{ __html: highlighted }}
       />
 
