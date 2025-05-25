@@ -18,11 +18,12 @@ export default function Home() {
 
     for (const wrong in spellcheckData) {
       const correct = spellcheckData[wrong];
-      const regex = new RegExp(`${wrong}`, 'g');
+      const regex = new RegExp(`(?:\\s|^)${wrong}(?=\\s|[.,!?\\n]|$)`, 'g');
+
       if (regex.test(result)) {
         found = true;
         result = result.replace(regex, `<mark>${wrong}</mark>`);
-        fixed = fixed.replace(regex, correct);
+        fixed = fixed.replace(regex, ` ${correct}`);
       }
     }
 
