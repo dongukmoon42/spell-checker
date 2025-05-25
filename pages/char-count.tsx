@@ -1,4 +1,5 @@
 // ✅ pages/char-count.tsx
+import Head from 'next/head';
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -13,6 +14,14 @@ export default function CharCount() {
   const totalChars = countChars(input);
 
   return (
+    <>
+      <Head>
+        <title>글자 수 세기 - 공백 제외 글자 계산기</title>
+        <meta name="description" content="정확한 글자 수를 공백 제외 기준으로 실시간 계산해주는 도구입니다." />
+        <meta property="og:title" content="글자 수 세기" />
+        <meta property="og:description" content="텍스트 글자 수를 쉽게 계산해보세요." />
+        <meta property="og:type" content="website" />
+      </Head>
     <div style={{ maxWidth: '900px', margin: '30px auto', padding: '20px', fontFamily: 'sans-serif', backgroundColor: 'var(--background)', color: 'var(--foreground)', borderRadius: '10px' }}>
       <h1 style={{ fontSize: '28px', marginBottom: '10px' }}>✍️ 글자 수 세기</h1>
 
@@ -37,5 +46,6 @@ export default function CharCount() {
 
       <p style={{ marginTop: '10px', fontWeight: 'bold' }}>총 글자 수 (공백 제외): <span style={{ color: '#0070f3' }}>{totalChars}</span></p>
     </div>
+    </>
   );
 }

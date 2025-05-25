@@ -1,4 +1,5 @@
 // ✅ pages/resume-analyzer.tsx
+import Head from 'next/head';
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -66,6 +67,15 @@ export default function ResumeAnalyzer() {
   };
 
   return (
+    <>
+      <Head>
+        <title>자소서 분석기 - 문장 길이, 어미, 단어 빈도 분석</title>
+        <meta name="description" content="자기소개서 문장 구조를 분석하고 자주 쓰는 어미, 단어를 시각적으로 확인할 수 있는 분석기입니다." />
+        <meta property="og:title" content="자소서 분석기" />
+        <meta property="og:description" content="AI 기반 자소서 분석 도구로 완성도를 높여보세요." />
+        <meta property="og:type" content="website" />
+      </Head>
+
     <div style={{ maxWidth: '900px', margin: '30px auto', padding: '20px', fontFamily: 'sans-serif', backgroundColor: 'var(--background)', color: 'var(--foreground)', borderRadius: '10px' }}>
       <h1 style={{ fontSize: '28px', marginBottom: '10px' }}>📊 자소서 문장 분석기</h1>
 
@@ -92,5 +102,6 @@ export default function ResumeAnalyzer() {
 
       <div style={{ marginTop: '20px', padding: '15px', background: 'var(--analyze-bg)', borderRadius: '8px' }} dangerouslySetInnerHTML={{ __html: analysis }} />
     </div>
+    </>
   );
 }
