@@ -18,7 +18,7 @@ export default function Home() {
 
     for (const wrong in spellcheckData) {
       const correct = spellcheckData[wrong];
-      const regex = new RegExp(`\\b${wrong}\\b`, 'g');
+      const regex = new RegExp(`${wrong}`, 'g');
       if (regex.test(result)) {
         found = true;
         result = result.replace(regex, `<mark>${wrong}</mark>`);
