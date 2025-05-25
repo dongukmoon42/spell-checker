@@ -31,7 +31,7 @@ export default function ResumeAnalyzer() {
     const topWords = Object.entries(freqMap)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 20)
-      .filter(([_, count]) => count >= 4);
+      .filter(([, count]) => count >= 4);
 
     let longCount = 0;
     let shortCount = 0;

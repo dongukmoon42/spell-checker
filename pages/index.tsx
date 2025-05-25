@@ -3,8 +3,11 @@ import Head from 'next/head';
 import { useState, useRef } from 'react';
 import Link from 'next/link';
 import spellcheckDataRaw from '../public/data/spellcheck_500.json';
+import Image from 'next/image';
 
-const spellcheckData: Record<string, string> = spellcheckDataRaw as any;
+const spellcheckData = Object.fromEntries(
+  spellcheckDataRaw.map((item) => [item.incorrect, item.correct])
+) as Record<string, string>;
 
 export default function Home() {
   const [input, setInput] = useState('');
@@ -57,7 +60,7 @@ export default function Home() {
         </nav>
 
         <div style={{ backgroundColor: 'var(--ad-bg)', padding: '12px', textAlign: 'center', marginBottom: '15px', borderRadius: '6px', border: '1px dashed #0070f3' }}>
-          <img src="/ad-placeholder.png" alt="광고 영역" style={{ maxWidth: '100%', height: 'auto' }} />
+          <Image src="/ad-placeholder.png" alt="광고 영역" width={600} height={60} />
         </div>
 
         <textarea

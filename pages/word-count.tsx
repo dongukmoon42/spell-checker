@@ -2,6 +2,8 @@
 import Head from 'next/head';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+
 
 export default function WordCount() {
   const [input, setInput] = useState('');
@@ -32,7 +34,7 @@ export default function WordCount() {
       </nav>
 
       <div style={{ backgroundColor: 'var(--ad-bg)', padding: '12px', textAlign: 'center', marginBottom: '15px', borderRadius: '6px', border: '1px dashed #0070f3' }}>
-        <img src="/ad-placeholder.png" alt="광고 영역" style={{ maxWidth: '100%', height: 'auto' }} />
+        <Image src="/ad-placeholder.png" alt="광고 영역" width={600} height={60} />
       </div>
 
       <textarea
