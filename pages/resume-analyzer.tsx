@@ -24,7 +24,7 @@ export default function ResumeAnalyzer() {
     });
 
     const topWords = Object.entries(wordFreq)
-      .filter(([_, count]) => count >= 4)
+      .filter(([, count]) => count >= 4)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 20);
 
