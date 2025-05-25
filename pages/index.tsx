@@ -1,8 +1,6 @@
 // pages/index.tsx
-// ✅ 수정 파일: pages/index.tsx
-import Link from 'next/link';
-import { useState } from 'react';
-import fs from 'fs';
+
+import { useState, useEffect } from 'react';
 import path from 'path';
 import { GetStaticProps } from 'next';
 
@@ -18,35 +16,31 @@ interface HomeProps {
 export default function Home({ corrections }: HomeProps) {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
+  const [highlightedOutput, setHighlightedOutput] = useState('');
 
   const handleCheck = () => {
     let corrected = input;
-    const highlighted: string[] = [];
+    let highlighted = input;
 
     corrections.forEach(({ wrong, correct }) => {
-      const regex = new RegExp(wrong, 'gi');
-      if (regex.test(corrected)) {
-        highlighted.push(wrong);
-        corrected = corrected.replace(regex, `<span style="background-color: #ffb3b3">${correct}</span>`);
-      }
+      const regex = new RegExp(`\\b${wrong}\\b`, 'g');
+      corrected = corrected.replace(regex, correct);
+      highlighted = highlighted.replace(regex, `<span style="background-color:#ffb3b3">${wrong}</span>`);
     });
 
-    setOutput(
-      highlighted.length > 0
-        ? `❗ 표시된 단어는 자주 틀리는 표현일 수 있어요.<br/><br/><strong>🔧 수정된 문장:</strong><br/>${corrected}`
-        : '오타나 자주 틀리는 표현을 찾지 못했어요.'
-    );
+    setOutput(corrected);
+    setHighlightedOutput(highlighted);
   };
 
   return (
     <div style={{ maxWidth: '900px', margin: '30px auto', padding: '20px', fontFamily: 'sans-serif' }}>
-      <h1 style={{ fontSize: '28px', marginBottom: '10px' }}>🤪 맞춤법 검사기 (Next.js)</h1>
+      <h1 style={{ fontSize: '28px', marginBottom: '10px' }}>🤯 맞춤법 검사기 (Next.js)</h1>
 
-      <nav style={{ marginBottom: '20px', backgroundColor: '#d7ffd9', padding: '12px 20px', borderRadius: '8px', display: 'flex', justifyContent: 'center', gap: '20px', fontSize: '16px', fontWeight: 500 }}>
-        <Link href="/">맞춤법 검사기</Link>
-        <Link href="/word-count">단어 수 세기</Link>
-        <Link href="/char-count">글자 수 세기</Link>
-        <Link href="/resume-analyzer">자소서 분석기</Link>
+      <nav style={{ marginBottom: '20px', backgroundColor: '#d6f5d6', padding: '12px 20px', borderRadius: '8px', display: 'flex', justifyContent: 'center', gap: '20px', fontSize: '16px', fontWeight: 500 }}>
+        <a href="/" style={{ color: '#0070f3', textDecoration: 'none' }}>맞춤법 검사기</a>
+        <a href="/word-count" style={{ color: '#0070f3', textDecoration: 'none' }}>단어 수 세기</a>
+        <a href="/char-count" style={{ color: '#0070f3', textDecoration: 'none' }}>글자 수 세기</a>
+        <a href="/resume-analyzer" style={{ color: '#0070f3', textDecoration: 'none' }}>자소서 분석기</a>
       </nav>
 
       <div style={{ backgroundColor: '#cce5ff', padding: '12px', textAlign: 'center', marginBottom: '15px', borderRadius: '6px', border: '1px dashed #0070f3' }}>
@@ -54,41 +48,40 @@ export default function Home({ corrections }: HomeProps) {
       </div>
 
       <textarea
-        rows={10}
-        style={{ width: '100%', padding: '10px', fontSize: '16px', borderRadius: '6px' }}
+        rows={6}
         placeholder="여기에 텍스트를 입력하세요..."
+        style={{ width: '100%', padding: '10px', fontSize: '16px', borderRadius: '6px' }}
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
 
       <button
         onClick={handleCheck}
-        style={{ marginTop: '10px', padding: '10px 20px', fontSize: '16px', borderRadius: '6px', backgroundColor: '#0070f3', color: '#fff', border: 'none', cursor: 'pointer' }}
+        style={{ marginTop: '10px', padding: '10px 20px', fontSize: '16px', backgroundColor: '#0070f3', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}
       >
         검사하기
       </button>
 
-      <div style={{ marginTop: '20px', padding: '15px', background: '#e6f7ff', borderRadius: '6px' }}>
-        <div dangerouslySetInnerHTML={{ __html: output }} />
+      <div style={{ marginTop: '20px', padding: '15px', background: '#e6f7ff', borderRadius: '8px' }}>
+        <h3>🔧 수정된 문장:</h3>
+        <p>{output || '수정할 표현이 없습니다.'}</p>
       </div>
 
-      {output && output.includes('<span') && (
-        <button
-          style={{ marginTop: '10px', padding: '8px 16px', fontSize: '14px', backgroundColor: '#0056b3', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
-          onClick={() => navigator.clipboard.writeText(output.replace(/<[^>]+>/g, ''))}
-        >
-          📋 수정된 문장 복사하기
-        </button>
-      )}
+      <div style={{ marginTop: '20px', padding: '15px', background: '#fffbe6', borderRadius: '8px' }}>
+        <h3>❗ 하이라이트:</h3>
+        <div dangerouslySetInnerHTML={{ __html: highlightedOutput }} />
+      </div>
     </div>
   );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const filePath = path.join(process.cwd(), 'public', 'data', 'spellcheck_500.json');
-  const fileContent = fs.readFileSync(filePath, 'utf-8');
-  const corrections = JSON.parse(fileContent);
+  const fs = require('fs');
+  const correctionsPath = path.join(process.cwd(), 'public', 'data', 'spellcheck_500.json');
+  const corrections = JSON.parse(fs.readFileSync(correctionsPath, 'utf-8'));
   return {
-    props: { corrections },
+    props: {
+      corrections,
+    },
   };
 };
